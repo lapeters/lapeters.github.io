@@ -1,18 +1,25 @@
 footer
 	background: $text-color
 	height: 70px
+	.content-wrap
+		margin-left: 30px
+		transform: translateY(35%);
 
 	nav
 		a
 			color: #fff
 			@extend %small-bold
+			display: inline-block
+			margin-right: 20px
 
 			&:hover
 				color: $accent-color
 
-	p
+	.copyright
 		font:
 			size: 13px
 			family: Open Sans, san-serif
 			weight: 400
+		text-transform: uppercase
 		color: #fff
+		margin: 0

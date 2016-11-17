@@ -553,15 +553,23 @@ header {
 footer {
   background: #222222;
   height: 70px; }
+  footer .content-wrap {
+    margin-left: 30px;
+    -webkit-transform: translateY(35%);
+            transform: translateY(35%); }
   footer nav a {
-    color: #fff; }
+    color: #fff;
+    display: inline-block;
+    margin-right: 20px; }
     footer nav a:hover {
       color: #F3484D; }
-  footer p {
+  footer .copyright {
     font-size: 13px;
     font-family: Open Sans, san-serif;
     font-weight: 400;
-    color: #fff; }
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0; }
 
 html {
   height: 100%; }
