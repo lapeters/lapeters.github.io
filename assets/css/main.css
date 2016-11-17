@@ -523,10 +523,11 @@ header {
     margin-top: 0;
     background: #222222; }
   header nav li {
-    float: right; }
+    float: right;
+    margin-right: 30px; }
     header nav li a {
       display: inline-block;
-      margin: 10px 25px;
+      margin: 10px 20px;
       color: #fff; }
       header nav li a:hover {
         color: #F3484D; }
