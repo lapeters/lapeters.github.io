@@ -402,6 +402,12 @@ template {
 [hidden] {
   display: none; }
 
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -571,6 +577,38 @@ footer {
     text-transform: uppercase;
     color: #fff;
     margin: 0; }
+
+section #main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #222222; }
+  section #main::after {
+    clear: both;
+    content: "";
+    display: block; }
+
+section #side-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  section #side-column:last-child {
+    margin-right: 0; }
+  section #side-column p {
+    color: white; }
+
+section #content-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 65.88078%;
+  margin-right: 0;
+  background: #C4F0F8; }
+  section #content-column:last-child {
+    margin-right: 0; }
+  section #content-column p {
+    color: #222222; }
 
 html {
   height: 100%; }

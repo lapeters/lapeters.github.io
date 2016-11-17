@@ -1,0 +1,15 @@
+section
+	#main
+		@include outer-container()
+		background-color: $text-color
+
+	#side-column
+		@include span-columns(4)
+		p
+			color: white
+	#content-column
+		@include span-columns(8)
+		@include omega()
+		background: #C4F0F8
+		p
+			color: $text-color
