@@ -1,0 +1,24 @@
+@import "0-tools/normalize";
+@import "0-tools/bourbon/bourbon";
+@import "0-tools/fonts";
+@import "1-base/vars";
+@import "1-base/base";
+@import "1-base/placeholders";
+@import "2-modules/header";
+@import "2-modules/footer";
+
+html {
+	height: 100%;
+
+	body {
+		min-height: 100%;
+  		display: flex;
+		flex-direction: column;
+
+		#home {
+			flex: 1;
+		}
+	}
+}
+
+
