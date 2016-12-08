@@ -1,15 +1,47 @@
 section
+	max-width: 64em
+	margin-left: auto
+	margin-right: auto
+
 	#main
 		@include outer-container()
-		background-color: $text-color
+		padding: 15px
 
+
+	h3
+		font:
+			family: Montserrat, sans-serif
+			size: 15px
+			weight: 700
+		text-transform: uppercase
+		text-align: center
+
+
+	
 	#side-column
 		@include span-columns(4)
-		p
-			color: white
+
+		#face
+			@include span-columns(2)
+			@include shift(1)
+
+
+		img
+			padding: 4px
+			line-height: 1.42857143
+			background: white
+			border: 1px solid $text-color
+			transition: all 0.2s ease-in-out
+			display: inline-block
+			max-width: 100%
+			height auto
+
+		
 	#content-column
 		@include span-columns(8)
 		@include omega()
-		background: #C4F0F8
-		p
-			color: $text-color
+
+
+	#side-column, #content-column
+		@media screen and (max-width: 736px)
+			@include span-columns(12 of 12)

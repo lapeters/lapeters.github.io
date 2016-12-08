@@ -578,37 +578,64 @@ footer {
     color: #fff;
     margin: 0; }
 
-section #main {
-  max-width: 1200px;
+section {
+  max-width: 64em;
   margin-left: auto;
-  margin-right: auto;
-  background-color: #222222; }
-  section #main::after {
-    clear: both;
-    content: "";
-    display: block; }
-
-section #side-column {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%; }
-  section #side-column:last-child {
+  margin-right: auto; }
+  section #main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px; }
+    section #main::after {
+      clear: both;
+      content: "";
+      display: block; }
+  section h3 {
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center; }
+  section #side-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    section #side-column:last-child {
+      margin-right: 0; }
+    section #side-column #face {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 14.70196%;
+      margin-left: 8.5298%; }
+      section #side-column #face:last-child {
+        margin-right: 0; }
+    section #side-column img {
+      padding: 4px;
+      line-height: 1.42857143;
+      background: white;
+      border: 1px solid #222222;
+      transition: all 0.2s ease-in-out;
+      display: inline-block;
+      max-width: 100%; }
+  section #content-column {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 65.88078%;
     margin-right: 0; }
-  section #side-column p {
-    color: white; }
-
-section #content-column {
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-right: 0;
-  background: #C4F0F8; }
-  section #content-column:last-child {
-    margin-right: 0; }
-  section #content-column p {
-    color: #222222; }
+    section #content-column:last-child {
+      margin-right: 0; }
+  @media screen and (max-width: 736px) {
+    section #side-column, section #content-column {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      section #side-column:last-child, section #content-column:last-child {
+        margin-right: 0; } }
 
 html {
   height: 100%; }
