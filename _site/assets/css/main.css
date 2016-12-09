@@ -579,15 +579,15 @@ footer {
     margin: 0; }
 
 section {
-  max-width: 64em;
+  max-width: 60em;
   margin-left: auto;
   margin-right: auto; }
-  section #main {
+  section #abt-main {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding: 15px; }
-    section #main::after {
+    section #abt-main::after {
       clear: both;
       content: "";
       display: block; }
@@ -601,17 +601,9 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 23.23176%; }
     section #side-column:last-child {
       margin-right: 0; }
-    section #side-column #face {
-      float: left;
-      display: block;
-      margin-right: 2.35765%;
-      width: 14.70196%;
-      margin-left: 8.5298%; }
-      section #side-column #face:last-child {
-        margin-right: 0; }
     section #side-column img {
       padding: 4px;
       line-height: 1.42857143;
@@ -624,7 +616,7 @@ section {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 65.88078%;
+    width: 74.41059%;
     margin-right: 0; }
     section #content-column:last-child {
       margin-right: 0; }
@@ -636,6 +628,32 @@ section {
       width: 100%; }
       section #side-column:last-child, section #content-column:last-child {
         margin-right: 0; } }
+
+section #work-main {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px; }
+  section #work-main::after {
+    clear: both;
+    content: "";
+    display: block; }
+  section #work-main ul {
+    width: 100%;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 0; }
+    section #work-main ul li.block {
+      display: table-cell;
+      width: 25%;
+      padding: 2.35765%;
+      background-color: #F3484D;
+      text-align: center; }
+      section #work-main ul li.block:nth-child(4n) {
+        margin-right: 0; }
+      section #work-main ul li.block:nth-child(4n+1) {
+        clear: left; }
 
 html {
   height: 100%; }

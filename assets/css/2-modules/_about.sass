@@ -1,9 +1,9 @@
 section
-	max-width: 64em
+	max-width: 60em
 	margin-left: auto
 	margin-right: auto
 
-	#main
+	#abt-main
 		@include outer-container()
 		padding: 15px
 
@@ -19,12 +19,7 @@ section
 
 	
 	#side-column
-		@include span-columns(4)
-
-		#face
-			@include span-columns(2)
-			@include shift(1)
-
+		@include span-columns(3)
 
 		img
 			padding: 4px
@@ -38,7 +33,7 @@ section
 
 		
 	#content-column
-		@include span-columns(8)
+		@include span-columns(9)
 		@include omega()
 
 

@@ -1,0 +1,16 @@
+section
+	#work-main
+		@include outer-container
+		padding: 15px
+
+		ul
+			@include fill-parent();
+			@include row(table);	
+			padding: 0
+			
+			li.block
+			  @include span-columns(3)
+			  @include omega(4n)
+			  @include pad()
+			  background-color: $accent-color
+			  text-align: center
