@@ -4,3 +4,10 @@
 		size: 14px
 		weight: 700
 	text-transform: uppercase
+
+@mixin after($num)
+	&:nth-child(n+#{$num + 1})
+		@content
+section
+	&:nth-child(odd)
+		background: $alt-bg-color
