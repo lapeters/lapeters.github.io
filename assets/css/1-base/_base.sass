@@ -51,12 +51,14 @@ hr
 // Links
 
 a
-  color: $link-color
+  color: $accent-color
   text-decoration: none
   outline: 0
   
 a:hover, a:focus
-  color: lighten($link-color, 20%)
+  color: lighten($accent-color, 20%)
+
+
 
 // Selection colors (easy to forget)
 
@@ -85,3 +87,12 @@ body
   color: $text-color
   -webkit-font-smoothing: antialiased
   -webkit-text-size-adjust: 100%
+
+@mixin after($num)
+  &:nth-child(n+#{$num + 1})
+    @content
+section
+  &:nth-child(odd)
+    background: $alt-bg-color
+
+

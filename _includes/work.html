@@ -2,54 +2,28 @@
 		<div id="work-main">
 				<h3 id="work">Work</h3>	
 			<ul>
-				<li class="block">
+				{% for project in site.data.portfolio.projects %}
+
+				<li class="block" style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
 					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
+						<strong>{{ project.name }}</strong>
 						<div class="zoom-icon"></div>
 					</div>
 				</li>
-				<li class="block">
+				
+				{% endfor %}
+
+				<!-- STORIES -->
+				{% for story in site.data.portfolio.stories %}
+
+				<li class="block" style="background-image: url(/assets/img/work/stories/{{ story.folder }}/main.jpg);">
 					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
+						<strong>{{ story.headline }}</strong>
+						<p>{{ story.date }}</p>
 					</div>
 				</li>
-				<li class="block">
-					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
-					</div>
-				</li>
-				<li class="block">
-					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
-					</div>
-				</li>
-				<li class="block">
-					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
-					</div>
-				</li>
-				<li class="block">
-					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
-					</div>
-				</li>
-				<li class="block">
-					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
-					</div>
-				</li>
-				<li class="block">
-					<div class="thumb-overlay">
-						<strong>TEST IMAGE</strong>
-						<div class="zoom-icon"></div>
-					</div>
-				</li>
+
+				{% endfor %}
 
 			</ul>
 	</div>
