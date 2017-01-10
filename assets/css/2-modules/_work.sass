@@ -78,28 +78,42 @@
 .work-container
 	@include outer-container(60em)
 	position: relative
+	+padding(null 15px 15px 15px)
 
 	i
 		cursor: pointer
 		opacity: 0.5
 		color: $text-color
-		+position(absolute, null null null -40px)
+		+position(absolute, -3% null null -3%)
 
 		&:hover
 			opacity: 1	
 
 	h4
-		padding-top: 10px
-		font-size: 16px
+		font-size: em(16, 13)
 
 	.pic
 		@include span-columns(4)
+		@include media($mobile)
+			@include span-columns(12 of 12)
 		img
 			max-width: 100%
-			
+			height: auto
+
 		.button
 			@include button
 			margin-right: auto
 			margin-left: auto
 	.copy
 		@include span-columns(8)
+		@include media($mobile)
+			@include span-columns(12 of 12)
+
+@media (max-width: 850px)
+	.work-container
+		i
+			+position(absolute, -2% null null 0)
+		h4
+			padding-left: 5%
+
+

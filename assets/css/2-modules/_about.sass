@@ -12,7 +12,7 @@
 		line-height: 1.42857143
 		background: white
 		border: 1px solid $text-color
-		transition: all 0.2s ease-in-out
+		
 		display: inline-block
 		max-width: 100%
 		height auto
@@ -28,16 +28,12 @@
 		.tools-unit
 			@include span-columns(2)
 			@include omega()
-			padding-bottom: 2em
+
 
 			svg
-				+size(60px)
+				+size(em(60px))
 				path
 					fill: #3F4C5B
-
-
-
-
 
 #side-column, #content-column
 	@media screen and (max-width: 736px)
