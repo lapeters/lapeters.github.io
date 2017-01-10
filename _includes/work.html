@@ -1,30 +1,51 @@
 <section id="work">
-		<div id="work-main">
-				<h3 id="work">Work</h3>	
-			<ul>
-				{% for project in site.data.portfolio.projects %}
 
+	<div class="work-belt">
+		<div class="thumb-wrap">
+			<div id="work-main">
+			<h3>Work</h3>	
+			<ul>
+				<!-- WEBSITES -->
+				{% for project in site.data.portfolio.projects %}
 				<li class="block" style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
 					<div class="thumb-overlay">
 						<strong>{{ project.name }}</strong>
-						<div class="zoom-icon"></div>
+						<div class="zoom-icon">{% include icons/icon-link.html %} </div>
 					</div>
 				</li>
-				
 				{% endfor %}
-
 				<!-- STORIES -->
 				{% for story in site.data.portfolio.stories %}
-
 				<li class="block" style="background-image: url(/assets/img/work/stories/{{ story.folder }}/main.jpg);">
 					<div class="thumb-overlay">
-						<strong>{{ story.headline }}</strong>
-						<p>{{ story.date }}</p>
+						<a href="{{ story.link }}" target="_blank">
+							<strong>{{ story.headline }}</strong>
+							<div class="zoom-icon">{% include icons/icon-story-link.html %}</div>
+						</a>
 					</div>
 				</li>
-
 				{% endfor %}
-
 			</ul>
+			</div>
+		</div>
+
+		<div class="work-wrap">
+			<div class="work-container">
+
+			<i class="fa fa-angle-double-left fa-3x" title="Back"></i><h4>Work Example</h4>
+			<div class="pic">
+				<img src="#" alt="Box" style="width: 266px; height: 200px; background: #222;">
+				<a href="#" class="button">Visit Site</a>
+			</div>
+			<div class="copy">
+				<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>
+
+				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+			</div>
+
+
+			</div>
+		</div>
 	</div>
 </section>

@@ -12,7 +12,15 @@
 		<div id="content-column">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corrupti iste ullam quisquam pariatur, eius, at omnis mollitia quod quidem nisi id aut sunt! Obcaecati unde eum quae ullam dignissimos.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptate atque, qui adipisci, sit rerum voluptatum neque fuga quidem hic ab assumenda ullam dolorem quae, expedita et ratione sed explicabo!</p>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis distinctio facilis aliquam optio, molestias, dolorum voluptatum ex reiciendis, fuga fugiat laboriosam. Ipsa hic error ut, rerum dolorum, eos sequi vitae.</p>
+			<p>XXXXXXXXXXXXXXX</p>
+
+			<div id="tools-column">
+				{% for tool in site.data.portfolio.tools %}
+
+				<div class="tools-unit"> {% include icons/tools/icon-{{ tool.name }}.html %} </div>
+
+				{% endfor %}
+			</div>
 		</div>
 	</div>
 
