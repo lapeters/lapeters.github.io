@@ -538,6 +538,74 @@ body {
 section:nth-child(odd) {
   background: #D8DBDE; }
 
+/**
+ *   Here's where everything gets included. You don't need
+ *   to change anything here, and doing so might break
+ *   stuff. Here be dragons and all that.
+ */
+/**
+ *   Default variables
+ *
+ *   While these can be set with JavaScript, it's probably
+ *   better and faster to just set them here, compile to
+ *   CSS and include that instead to use some of that
+ *   hardware-accelerated goodness.
+ */
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0; }
+  .unslider-wrap {
+    position: relative; }
+    .unslider-wrap.unslider-carousel > li {
+      float: left; }
+  .unslider-vertical > ul {
+    height: 100%; }
+  .unslider-vertical li {
+    float: none;
+    width: 100%; }
+  .unslider-fade {
+    position: relative; }
+    .unslider-fade .unslider-wrap li {
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      z-index: 8; }
+      .unslider-fade .unslider-wrap li.unslider-active {
+        z-index: 10; }
+  .unslider ul, .unslider ol, .unslider li {
+    list-style: none;
+    /* Reset any weird spacing */
+    margin: 0;
+    padding: 0;
+    border: none; }
+  .unslider-arrow {
+    position: absolute;
+    left: 20px;
+    z-index: 2;
+    cursor: pointer; }
+    .unslider-arrow.next {
+      left: auto;
+      right: 20px; }
+
+.unslider-nav ol {
+  list-style: none;
+  text-align: center; }
+  .unslider-nav ol li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 4px;
+    background: transparent;
+    overflow: hidden;
+    text-indent: -999em;
+    border: 2px solid #F3484D;
+    cursor: pointer; }
+    .unslider-nav ol li.unslider-active {
+      background: #F3484D;
+      cursor: default; }
+
 header {
   height: 450px;
   background: url(../img/bkgrnd2.png) top left repeat-x; }
@@ -585,8 +653,8 @@ footer {
             transform: translateY(35%); }
     @media screen and (min-width: 320px) and (max-width: 480px) {
       footer .content-wrap {
-        -webkit-transform: translateY(5%);
-                transform: translateY(5%); } }
+        -webkit-transform: translateY(50%);
+                transform: translateY(50%); } }
   footer nav a {
     color: #fff;
     display: inline-block;
@@ -671,7 +739,8 @@ footer {
 .work-belt {
   width: 200%;
   position: relative;
-  left: -100%; }
+  left: 0%;
+  transition: all, 800ms; }
 
 .thumb-wrap, .work-wrap {
   width: 50%;
@@ -681,7 +750,9 @@ footer {
   max-width: 60em;
   margin-left: auto;
   margin-right: auto;
-  padding: 15px; }
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px; }
   #work-main::after {
     clear: both;
     content: "";
@@ -741,7 +812,7 @@ footer {
         opacity: 0; }
         #work-main ul li.block .thumb-overlay strong {
           display: block;
-          padding: 20px;
+          padding-top: 20px;
           color: white;
           text-transform: uppercase;
           font-size: 20px;
@@ -754,6 +825,8 @@ footer {
         #work-main ul li.block .thumb-overlay p {
           color: white;
           font-size: 12px; }
+        #work-main ul li.block .thumb-overlay i {
+          color: #fff; }
       #work-main ul li.block:hover .thumb-overlay {
         top: 0%;
         -webkit-transform: rotateX(0deg);
@@ -767,7 +840,8 @@ footer {
   position: relative;
   padding-right: 15px;
   padding-bottom: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  display: none; }
   .work-container::after {
     clear: both;
     content: "";
@@ -801,33 +875,6 @@ footer {
     .work-container .pic img {
       max-width: 100%;
       height: auto; }
-    .work-container .pic .button {
-      border: 1px solid #076fe4;
-      border-radius: 3px;
-      box-shadow: inset 0 1px 0 0 #8ebcf1;
-      color: white;
-      display: inline-block;
-      font-size: inherit;
-      font-weight: bold;
-      background-color: #4294f0;
-      background-image: linear-gradient(#4294f0, #0776f3);
-      padding: 7px 18px;
-      text-decoration: none;
-      text-shadow: 0 1px 0 #0065d6;
-      background-clip: padding-box;
-      margin-right: auto;
-      margin-left: auto; }
-      .work-container .pic .button:hover:not(:disabled) {
-        background-color: #2f87ea;
-        background-image: linear-gradient(#2f87ea, #086fe3);
-        box-shadow: inset 0 1px 0 0 #60a2ec;
-        cursor: pointer; }
-      .work-container .pic .button:active:not(:disabled), .work-container .pic .button:focus:not(:disabled) {
-        border: 1px solid #076fe4;
-        box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3; }
-      .work-container .pic .button:disabled {
-        cursor: not-allowed;
-        opacity: 0.5; }
   .work-container .copy {
     float: left;
     display: block;

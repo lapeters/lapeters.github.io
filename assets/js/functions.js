@@ -1,5 +1,7 @@
 $(function() {
 	smoothScroll(1000);
+	workBelt();
+	workLoad();
 });
 
 function smoothScroll (duration) {
@@ -15,3 +17,33 @@ function smoothScroll (duration) {
 		}
 	});
 }
+
+function workBelt() {
+	$('.sites').click(function() {
+		$('.work-belt').css('left', '-100%');
+		$('.work-container').show();
+	});
+	$('.work-return').click(function() {
+		$('.work-belt').css('left', '0%');
+		$('.work-container').hide(800);
+	});
+
+}
+
+function workLoad() {
+	$.ajaxSetup({ cache: false });
+
+	$('.block').click(function(){
+
+		var $this = $(this),
+			newTitle = $this.find('strong').text(),
+			newFolder = $this.data('folder'),
+			urlPic = '/work/' + newFolder + '/img.html',
+			urlCopy = '/work/' + newFolder + '/copy.html';
+
+		$('.pic').load(urlPic);
+		$('.copy').load(urlCopy);
+		$('.title').text(newTitle);
+	});
+} 
+

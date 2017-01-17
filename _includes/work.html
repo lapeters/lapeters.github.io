@@ -7,21 +7,19 @@
 			<ul>
 				<!-- WEBSITES -->
 				{% for project in site.data.portfolio.projects %}
-				<li class="block" style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
-					<div class="thumb-overlay">
+					<li class="block" data-folder="{{  project.folder }}" style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
+					<div class="thumb-overlay sites">
 						<strong>{{ project.name }}</strong>
-						<div class="zoom-icon">{% include icons/icon-link.html %} </div>
+						<br><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i>
 					</div>
-				</li>
+					</li>
 				{% endfor %}
 				<!-- STORIES -->
 				{% for story in site.data.portfolio.stories %}
 				<li class="block" style="background-image: url(/assets/img/work/stories/{{ story.folder }}/main.jpg);">
 					<div class="thumb-overlay">
-						<a href="{{ story.link }}" target="_blank">
-							<strong>{{ story.headline }}</strong>
-							<div class="zoom-icon">{% include icons/icon-story-link.html %}</div>
-						</a>
+						<strong>{{ story.headline }}</strong>
+						<br><a href="{{ story.link }}" target="_blank"><i class="fa fa-external-link fa-3x" aria-hidden="true"></i></a>
 					</div>
 				</li>
 				{% endfor %}
@@ -32,21 +30,13 @@
 		<div class="work-wrap">
 			<div class="work-container">
 
-			<i class="fa fa-angle-double-left fa-3x" title="Back"></i><h4>Work Example</h4>
-			<div class="pic">
-				<img src="#" alt="Box" style="width: 266px; height: 200px; background: #222;">
-				<p><a href="#" class="button">Visit Site</a></p>
-			</div>
-
-			<div class="copy">
-				<p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Curabitur blandit tempus porttitor.</p>
-
-				<p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-
-			</div>
-
-
-			</div>
+			<i class="fa fa-angle-double-left fa-3x work-return" title="Back"></i>
+			<h4 class="title">Work Example</h4>
+			
+			<div class="pic"></div>
+			<div class="copy"></div>
+			
+			</div>			
 		</div>
 	</div>
 </section>

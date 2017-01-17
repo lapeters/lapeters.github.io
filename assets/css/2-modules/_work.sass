@@ -3,7 +3,8 @@
 .work-belt
 	width: 200%
 	position: relative
-	left: -100%
+	left: 0%
+	+transition(all, 800ms)
 
 .thumb-wrap, .work-wrap
 	width: 50%
@@ -12,7 +13,7 @@
 
 #work-main
 	@include outer-container(60em)
-	padding: 15px
+	+padding(null 15px 15px 15px)
 
 	ul
 		padding: 0
@@ -55,7 +56,7 @@
 
 		  	strong
 		  		display: block
-		  		padding: 20px
+		  		+padding(20px null null null)
 		  		color: white
 		  		text-transform: uppercase
 		  		font-size: 20px
@@ -69,6 +70,8 @@
 		  	p
 		  		color: white
 		  		font-size: 12px
+		  	i
+		  		color: #fff
 			
 		  &:hover .thumb-overlay
 		  	top: 0%
@@ -79,6 +82,7 @@
 	@include outer-container(60em)
 	position: relative
 	+padding(null 15px 15px 15px)
+	display: none
 
 	i
 		cursor: pointer
@@ -96,14 +100,11 @@
 		@include span-columns(4)
 		@include media($mobile)
 			@include span-columns(12 of 12)
+		
 		img
 			max-width: 100%
 			height: auto
 
-		.button
-			@include button
-			margin-right: auto
-			margin-left: auto
 	.copy
 		@include span-columns(8)
 		@include media($mobile)
