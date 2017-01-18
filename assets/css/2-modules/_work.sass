@@ -12,38 +12,44 @@
 
 
 #work-main
-	+outer-container(60em)
+	@include outer-container(60em)
 	+padding(null 15px 15px 15px)
 
 	ul
 		padding: 0
 		
-	li.block
-	  +span-columns(3)
-	  +omega(4n)
-	  +pad()
-	  height: 150px
-	  position: relative
-	  overflow: hidden 
-	  margin-bottom: 2em
+		li.block
+		  @include span-columns(3)
+		  @include omega(4n)
+		  @include pad()
+		  height: 150px
+		  position: relative
+		  overflow: hidden 
+		  margin-bottom: 2em
 
-	  +after(4)
-	  	background:
-	  		position: center center
-	  		repeat: no-repeat
-	  		size: cover
-		  	
+		  @include after(4)
+		  	background:
+		  		position: center center
+		  		repeat: no-repeat
+		  		size: cover
+		  	.thumb-overlay
+		  		strong
+		  			font-size: 13px
+		  			text-transform: none
+				background:
+		  			position: center center
+		  			repeat: no-repeat
 
+		  +media($mobile)
+		  	+span-columns(3)
+		  	+omega(2n)
 
 	  	.thumb-overlay
-	  		background:
-	  			position: center center
-	  			repeat: no-repeat
 		  	+position(absolute, -50% 0px null 0px)
 		  	height: 100%
 		  	background: fade-out($accent-color, 0.1)
 		  	text-align: center
-		  	+transition(300ms)
+		  	@include transition(300ms)
 		  	+transform(rotateX(90deg))
 		  	+transform-origin(center bottom)
 		  	opacity: 0
@@ -66,17 +72,11 @@
 		  		font-size: 12px
 		  	i
 		  		color: #fff
-
-		  	+media($mobile)
-		  		+span-columns(3)
-		  		+omega(2n)
 			
-		&:hover .thumb-overlay
+		  &:hover .thumb-overlay
 		  	top: 0%
 		  	+transform(rotateX(0deg))
 		  	opacity: 1
-
-
 
 .content-main
 	+outer-container(60em)
@@ -84,22 +84,20 @@
 	+padding(null 15px 15px 15px)
 	display: none
 
-
-
-	i
-		cursor: pointer
-		opacity: 0.5
-		color: $text-color
-		+position(absolute, -3% null null -3%)
-
-		&:hover
-			opacity: 1	
-
-	h4
-		font-size: em(16, 13)
-
 	.row
 		+row()
+
+		i
+			cursor: pointer
+			opacity: 0.5
+			color: $text-color
+			+position(absolute, -3% null null -3%)
+
+			&:hover
+				opacity: 1	
+
+		h4
+			font-size: em(16, 13)
 
 		.pic
 
