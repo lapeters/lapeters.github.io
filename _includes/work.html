@@ -7,7 +7,7 @@
 			<ul>
 				<!-- WEBSITES -->
 				{% for project in site.data.portfolio.projects %}
-					<li class="block" data-folder="{{  project.folder }}" style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
+					<li class="block" data-folder="{{  project.folder }}" data-link="{{ project.link }}"style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
 					<div class="thumb-overlay sites">
 						<strong>{{ project.name }}</strong>
 						<br><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i>
@@ -28,13 +28,18 @@
 		</div>
 
 		<div class="work-wrap">
-			<div class="work-container">
+			<div class="content-main">
+				<div class="row">
 
-			<i class="fa fa-angle-double-left fa-3x work-return" title="Back"></i>
-			<h4 class="title">Work Example</h4>
+					<i class="fa fa-angle-double-left fa-3x work-return" title="Back"></i>
+					<h4 class="title">Work Example</h4>
 			
-			<div class="pic"></div>
-			<div class="copy"></div>
+					<div class="pic"></div>
+					<div class="copy"></div>
+				</div>
+				<div class="bttn">
+					<a href="" target="_blank" class="button">VIST SITE</a>
+				</div>
 			
 			</div>			
 		</div>

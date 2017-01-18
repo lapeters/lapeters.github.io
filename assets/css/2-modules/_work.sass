@@ -4,7 +4,7 @@
 	width: 200%
 	position: relative
 	left: 0%
-	+transition(all, 800ms)
+	+transition(all, 1000ms)
 
 .thumb-wrap, .work-wrap
 	width: 50%
@@ -12,44 +12,38 @@
 
 
 #work-main
-	@include outer-container(60em)
+	+outer-container(60em)
 	+padding(null 15px 15px 15px)
 
 	ul
 		padding: 0
 		
-		li.block
-		  @include span-columns(3)
-		  @include omega(4n)
-		  @include pad()
-		  height: 150px
-		  position: relative
-		  overflow: hidden 
-		  margin-bottom: 2em
+	li.block
+	  +span-columns(3)
+	  +omega(4n)
+	  +pad()
+	  height: 150px
+	  position: relative
+	  overflow: hidden 
+	  margin-bottom: 2em
 
-		  @include after(4)
-		  	background:
-		  		position: center center
-		  		repeat: no-repeat
-		  		size: cover
-		  	.thumb-overlay
-		  		strong
-		  			font-size: 13px
-		  			text-transform: none
-				background:
-		  			position: center center
-		  			repeat: no-repeat
+	  +after(4)
+	  	background:
+	  		position: center center
+	  		repeat: no-repeat
+	  		size: cover
+		  	
 
-		  @include media($mobile)
-		  	@include span-columns(3)
-		  	@include omega(2n)
 
 	  	.thumb-overlay
+	  		background:
+	  			position: center center
+	  			repeat: no-repeat
 		  	+position(absolute, -50% 0px null 0px)
 		  	height: 100%
 		  	background: fade-out($accent-color, 0.1)
 		  	text-align: center
-		  	@include transition(300ms)
+		  	+transition(300ms)
 		  	+transform(rotateX(90deg))
 		  	+transform-origin(center bottom)
 		  	opacity: 0
@@ -72,17 +66,25 @@
 		  		font-size: 12px
 		  	i
 		  		color: #fff
+
+		  	+media($mobile)
+		  		+span-columns(3)
+		  		+omega(2n)
 			
-		  &:hover .thumb-overlay
+		&:hover .thumb-overlay
 		  	top: 0%
 		  	+transform(rotateX(0deg))
 		  	opacity: 1
 
-.work-container
-	@include outer-container(60em)
+
+
+.content-main
+	+outer-container(60em)
 	position: relative
 	+padding(null 15px 15px 15px)
 	display: none
+
+
 
 	i
 		cursor: pointer
@@ -96,22 +98,36 @@
 	h4
 		font-size: em(16, 13)
 
-	.pic
-		@include span-columns(4)
-		@include media($mobile)
-			@include span-columns(12 of 12)
-		
-		img
-			max-width: 100%
-			height: auto
+	.row
+		+row()
 
-	.copy
-		@include span-columns(8)
-		@include media($mobile)
-			@include span-columns(12 of 12)
+		.pic
+
+			+span-columns(4)
+			+media($mobile)
+				+span-columns(12 of 12)
+			
+			img
+				max-width: 100%
+				height: auto
+
+		.copy
+			+span-columns(8)
+
+			+media($mobile)
+				+span-columns(12 of 12)
+	.bttn
+		+span-columns(2)
+		+shift(1)
+		+button
+		text-align: center
+		+media($mobile)
+			+span-columns(6 of 12)
+			+shift(3)
+
 
 @media (max-width: 850px)
-	.work-container
+	.content-main
 		i
 			+position(absolute, -2% null null 0)
 		h4

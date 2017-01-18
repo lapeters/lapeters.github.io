@@ -19,10 +19,18 @@ tools:
 # Work Section
 
 projects:
-- {name: For the win, folder: 'proj1'}
-- {name: Intra city, folder: 'proj2'}
-- {name: Localmotif, folder: 'proj3'}
-- {name: D49er Specials, folder: 'proj4'}
+- {name: For the win,
+	folder: 'proj1',
+	link: 'http://athletics.d49erspecial.com/'}
+- {name: Intra city,
+	folder: 'proj2',
+	link: 'http://neighborhoods.d49erspecial.com/'}
+- {name: Localmotif,
+	folder: 'proj3',
+	link: 'http://music.d49erspecial.com/'}
+- {name: D49er Specials,
+	folder: 'proj4',
+	link: 'http://d49erspecial.com/'}
 
 stories:
 - {headline: Cal State Long Beach receives a $3.045 million grant to continue stem cell research internship,
