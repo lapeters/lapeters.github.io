@@ -6,7 +6,7 @@
   @warn "The inline-block mixin is deprecated and will be removed in the next major version release";
 }
 
-@mixin button ($style: simple, $base-color: #4294f0, $text-size: inherit, $padding: 7px 18px) {
+@mixin button ($style: simple, $base-color: #F3484D, $text-size: inherit, $padding: 7px 18px) {
 
   @if type-of($style) == string and type-of($base-color) == color {
     @include buttonstyle($style, $base-color, $text-size, $padding);
@@ -15,7 +15,7 @@
   @if type-of($style) == string and type-of($base-color) == number {
     $padding: $text-size;
     $text-size: $base-color;
-    $base-color: #4294f0;
+    $base-color: #F3484D;
 
     @if $padding == inherit {
       $padding: 7px 18px;
@@ -46,10 +46,10 @@
   @if type-of($style) == number {
     $padding: $base-color;
     $text-size: $style;
-    $base-color: #4294f0;
+    $base-color: #F3484D;
     $style: simple;
 
-    @if $padding == #4294f0 {
+    @if $padding == #F3484D {
       $padding: 7px 18px;
     }
 
@@ -122,16 +122,16 @@
   }
 
   border: 1px solid $border;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 0 0 $inset-shadow;
+
+
   color: $color;
   display: inline-block;
   font-size: $textsize;
   font-weight: bold;
-  @include linear-gradient ($base-color, $stop-gradient);
+
   padding: $padding;
   text-decoration: none;
-  text-shadow: 0 1px 0 $text-shadow;
+
   background-clip: padding-box;
 
   &:hover:not(:disabled) {

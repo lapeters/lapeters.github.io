@@ -26,12 +26,14 @@
 		@include outer-container()
 
 		.tools-unit
-			@include span-columns(2)
+			@include span-columns(2 of 12)
 			@include omega()
+			+flex-wrap(wrap)
 
 
 			svg
 				+size(em(60px))
+				margin: 20px
 				path
 					fill: #3F4C5B
 
