@@ -21,12 +21,12 @@ function smoothScroll (duration) {
 
 function workBelt() {
 	$('.sites').click(function() {
-		$('.work-belt').css('left', '-100%');
-		$('.content-main').show();
+		$('#work-main').css('left', '-100%');
+		$('#content-main').show();
 	});
 	$('.work-return').click(function() {
-		$('.work-belt').css('left', '0%');
-		$('.content-main').hide(800);
+		$('#work-main').css('left', '0%');
+		$('#content-main').hide(800);
 	});
 
 }

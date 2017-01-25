@@ -1,4 +1,11 @@
 #------------------------
+# General Site Info
+
+name: Lindsay Peters
+e-mail: lpeters322@gmail.com
+description: "Front-end web developer, web designer, and writer based in Orange County, CA and specializing in Jekyll, Wordpress and Angular."
+
+#------------------------
 # About Section
 
 tools:
@@ -49,5 +56,8 @@ stories:
 	date: 'February 15, 2016',
 	link: 'http://www.daily49er.com/news/2016/02/15/students-research-use-of-robots-for-human-health/',
 	folder: 'story4'}
+
+#-----------------------
+# Contact Section
 
 

@@ -1,3 +1,29 @@
 <section id="contact">
-	<h3>Contact Me</h3>
+	<div id="contact-main">
+		<h3>Contact</h3>
+
+		<div class="form-section">
+			<form action="https://formspree.io/{{ site.data.portfolio.e-mail }}"
+	      method="POST">
+				
+				<div class="client-info">
+					<label for="name"><span>Your Name</span>
+		    		<input type="text" name="name"></label>
+
+		    		<label for="_replyto"><span>Your Email</span>
+		    		<input type="email" name="_replyto"></label>
+				</div>
+				
+	    		<label for="message"><span>Your Message</span>
+	    		<textarea name="message" id=""></textarea></label>
+
+				<div class="submit-wrap">
+	    			<input type="submit" value="Send">
+	    		</div>
+			</form>
+		</div>
+		<div class="social-section">
+			<p>Etiam porta sem malesuada magna mollis euismod. Sed posuere consectetur est at lobortis. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+		</div>
+	</div>
 </section>

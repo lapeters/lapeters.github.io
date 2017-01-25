@@ -1,6 +1,4 @@
-name: Lindsay Peters
-e-mail: lpeters322@gmail.com
-description: "Front-end web developer and web designer with experience in Twitter Bootstrap, WordPress, Jekyll, and Angular"
+
 markdown: redcarpet
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]

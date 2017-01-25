@@ -1,27 +1,27 @@
 #work
 	overflow-x: hidden
-.work-belt
+#work-main
 	width: 200%
 	position: relative
 	left: 0%
 	+transition(all, 1000ms)
 
-.thumb-wrap, .work-wrap
+.thumb-wrap, .content-wrap
 	width: 50%
 	float: left
 
 
-#work-main
-	@include outer-container(60em)
+#thumb-main
+	+outer-container(60em)
 	+padding(null 15px 15px 15px)
 
 	ul
 		padding: 0
 		
 		li.block
-		  @include span-columns(3)
+		  +span-columns(3)
 		  @include omega(4n)
-		  @include pad()
+		  +pad()
 		  height: 150px
 		  position: relative
 		  overflow: hidden 
@@ -49,10 +49,11 @@
 		  	height: 100%
 		  	background: fade-out($accent-color, 0.1)
 		  	text-align: center
-		  	@include transition(300ms)
+		  	+transition(300ms)
 		  	+transform(rotateX(90deg))
 		  	+transform-origin(center bottom)
 		  	opacity: 0
+		  	cursor: pointer
 
 		  	strong
 		  		display: block
@@ -72,13 +73,15 @@
 		  		font-size: 12px
 		  	i
 		  		color: #fff
+
+
 			
 		  &:hover .thumb-overlay
 		  	top: 0%
 		  	+transform(rotateX(0deg))
 		  	opacity: 1
 
-.content-main
+#content-main
 	+outer-container(60em)
 	position: relative
 	+padding(null 15px 15px 15px)
@@ -90,7 +93,7 @@
 		i
 			cursor: pointer
 			opacity: 0.5
-			color: $text-color
+			color: $accent-blue
 			+position(absolute, -3% null null -3%)
 
 			&:hover
@@ -124,11 +127,11 @@
 		+media($mobile)
 			+span-columns(6 of 12)
 			+shift(3)
-
-
+		a
+			color: white
 
 @media (max-width: 850px)
-	.content-main
+	#content-main
 		i
 			+position(absolute, -2% null null 0)
 		h4
