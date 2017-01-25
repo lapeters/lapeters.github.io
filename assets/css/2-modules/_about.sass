@@ -1,11 +1,12 @@
 
 #abt-main
-	@include outer-container(60em)
+	+outer-container(70em)
 	+padding(null 15px 15px 15px)
+	+row()
 
 
 #side-column
-	@include span-columns(3)
+	+span-columns(3)
 
 	img
 		padding: 4px
@@ -19,7 +20,7 @@
 
 	
 #content-column
-	@include span-columns(9)
+	+span-columns(9)
 	@include omega()
 
 	#tools-column
@@ -36,6 +37,8 @@
 				margin: 20px
 				path
 					fill: #3F4C5B
+.tools-column
+	+span-columns(3)
 
 #side-column, #content-column
 	@media screen and (max-width: 736px)

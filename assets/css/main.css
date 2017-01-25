@@ -574,15 +574,30 @@ header {
     line-height: 1;
     margin-top: 0; }
 
+@media screen and (min-width: 320px) and (max-width: 850px) {
+  nav {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+    nav ul {
+      float: none !important;
+      padding: 0; }
+    nav li {
+      display: inline;
+      float: none !important;
+      margin: 0 !important; }
+      nav li a {
+        display: inline-block; } }
+
 footer {
   background: #222222;
-  height: 90px; }
-  footer .content-wrap {
+  height: 12em; }
+  footer .footer-wrap {
     margin-left: 5%;
     -webkit-transform: translateY(35%);
             transform: translateY(35%); }
     @media screen and (min-width: 320px) and (max-width: 850px) {
-      footer .content-wrap {
+      footer .footer-wrap {
         -webkit-transform: translateY(50%);
                 transform: translateY(50%); } }
   footer nav a {
@@ -600,12 +615,17 @@ footer {
     margin: 0; }
 
 #abt-main {
-  max-width: 60em;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-bottom: 15px;
-  padding-left: 15px; }
+  padding-left: 15px;
+  display: block; }
+  #abt-main::after {
+    clear: both;
+    content: "";
+    display: block; }
   #abt-main::after {
     clear: both;
     content: "";
@@ -662,6 +682,14 @@ footer {
         #content-column #tools-column .tools-unit svg path {
           fill: #3F4C5B; }
 
+.tools-column {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 23.23176%; }
+  .tools-column:last-child {
+    margin-right: 0; }
+
 @media screen and (max-width: 736px) {
   #side-column, #content-column {
     float: left;
@@ -685,7 +713,7 @@ footer {
   float: left; }
 
 #thumb-main {
-  max-width: 60em;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
@@ -773,7 +801,7 @@ footer {
         opacity: 1; }
 
 #content-main {
-  max-width: 60em;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -891,7 +919,7 @@ footer {
     padding-left: 5%; } }
 
 #contact-main {
-  max-width: 60em;
+  max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
