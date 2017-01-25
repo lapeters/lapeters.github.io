@@ -32,11 +32,9 @@
 				<span>(949)302-3607</span>
 
 				<h4>Social Media</h4>
-					<a href="https://github.com/lapeters"><i class="fa fa-github-square fa-2x" aria-hidden="true"></i></a>
-					<a href="https://www.linkedin.com/in/lindsay-peters-119b9381"><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
-					<a href="https://www.facebook.com/lindsay.peters.18"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
-					<a href="https://twitter.com/lindsaypeters"><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
-
+					{% for social in site.data.portfolio.socials %}
+						<a href="{{ social.link }}"><i class="fa fa-{{ social.icon }}-square fa-2x" aria-hidden="true" target="_blank"></i></a>
+					{% endfor %}
 			</div>
 		</div>
 	</div>

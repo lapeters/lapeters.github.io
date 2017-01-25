@@ -927,6 +927,7 @@ footer {
       background: #F3484D;
       color: white;
       font-size: 1.5em;
+      font-weight: 700;
       text-transform: uppercase;
       width: 33%;
       cursor: pointer; }
@@ -956,7 +957,7 @@ footer {
   .social-section:last-child {
     margin-right: 0; }
   .social-section .social-wrap {
-    margin: 7%; }
+    margin: 10%; }
     .social-section .social-wrap h4 {
       color: #F3484D;
       margin-bottom: 1%; }

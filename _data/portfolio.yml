@@ -60,4 +60,12 @@ stories:
 #-----------------------
 # Contact Section
 
-
+socials:
+- {icon: 'github',
+	link: 'https://github.com/lapeters'}
+- {icon: 'linkedin',
+	link: 'https://www.linkedin.com/in/lindsay-peters-119b9381'}
+- {icon: 'twitter',
+	link: 'https://www.facebook.com/lindsay.peters.18'}
+- {icon: 'facebook',
+	link: 'https://twitter.com/lindsaypeters'}
