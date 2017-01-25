@@ -1,10 +1,10 @@
 // Basic Styles
 
 body
-  background: $bg-color
+  background: white
   font:
     family: $body-copy-font
-    size: 13px
+    size: em(13)
     weight: 400
   line-height: 1.6
 
@@ -22,12 +22,15 @@ section
 
 //	Typography
 
+$modular-scale-ratio: $minor-third
+$modular-scale-base: 0.813em
+
 .gigantic, .huge, .large, .bigger, .big, 
 h1, h2, h3, h4, h5, h6
   color: $accent-color
   font:
     family: $headings-font
-    weight: bold
+    weight: 700
   text-transform: uppercase
 
 .gigantic
@@ -36,20 +39,21 @@ h1, h2, h3, h4, h5, h6
   letter-spacing: -2px
 
 .huge, h1
-  font-size: 68px
+  font-size: modular-scale(4)
   line-height: 1.05
   letter-spacing: -1px
 
 .large, h2
-  font-size: 42px
+  font-size: modular-scale(3)
   line-height: 1.14
 
 .bigger, h3 
-  @extend %small-bold
+  font-size: modular-scale(2)
+  //@extend %small-bold
   text-align: center
 
 .big, h4
-  font-size: 22px
+  font-size: modular-scale(1)
   line-height: 1.38
 
 .small, small 
@@ -84,7 +88,6 @@ a:hover, a:focus
   color: $accent-color
 
 
-
 // Selection colors (easy to forget)
 
 ::selection
@@ -102,12 +105,8 @@ img::-moz-selection
 body
   -webkit-tap-highlight-color: $selection-color
 
-// Buttons
-
-
-
 // Mobile and Media Query Variables
 
-$mobile: new-breakpoint(min-width 320px max-width 480px, 6)
+$mobile: new-breakpoint(min-width 320px max-width 850px, 6)
 
 
