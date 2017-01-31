@@ -19,7 +19,6 @@ section
   &:nth-child(odd)
     background: $alt-bg-color
 
-
 //	Typography
 
 $modular-scale-ratio: $minor-third
@@ -49,7 +48,6 @@ h1, h2, h3, h4, h5, h6
 
 .bigger, h3 
   font-size: modular-scale(2)
-  //@extend %small-bold
   text-align: center
 
 .big, h4
@@ -87,6 +85,14 @@ a
 a:hover, a:focus
   color: $accent-color
 
+// Forms
+
+button,
+input,
+optgroup,
+select,
+textarea 
+  font-family: Roboto, sans-serif
 
 // Selection colors (easy to forget)
 
@@ -107,6 +113,6 @@ body
 
 // Mobile and Media Query Variables
 
-$mobile: new-breakpoint(min-width 320px max-width 850px, 6)
+$mobile: new-breakpoint(min-width 320px max-width 500px, 6)
 
 

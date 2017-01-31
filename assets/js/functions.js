@@ -2,6 +2,7 @@ $(function() {
 	smoothScroll(1000);
 	workBelt();
 	workLoad();
+	animate();
 });
 
 function smoothScroll (duration) {
@@ -49,4 +50,15 @@ function workLoad() {
 		$('.title').text(newTitle);
 	});
 } 
+
+function animate() {
+	$('.fa').mouseenter(function(){
+		var $this = $(this);
+		$($this).addClass('fa-3x').removeClass('fa-2x');
+	});
+	$('.fa').mouseleave(function(){
+		var $this = $(this);
+		$($this).removeClass('fa-3x').addClass('fa-2x');
+	});
+}
 

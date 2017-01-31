@@ -1,7 +1,7 @@
 <section id="about">
-	<div id="abt-main">
+	<div id="about_main-div">
 	<h3>About Myself</h3>
-		<div id="side-column">
+		<div id="about_column-side">
 			<div id="face">
 				<img src="../assets/img/me.JPG" alt="My Face">
 			</div>
@@ -9,23 +9,49 @@
 			<p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Quod expedita, eius? Velit ex quaerat doloremque, iste non a ut quas soluta, laboriosam autem placeat quibusdam quasi dolor tempora deleniti dignissimos?</p>
 		</div>
 
-		<div id="content-column">
+		<div id="about_column-main">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto corrupti iste ullam quisquam pariatur, eius, at omnis mollitia quod quidem nisi id aut sunt! Obcaecati unde eum quae ullam dignissimos.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptate atque, qui adipisci, sit rerum voluptatum neque fuga quidem hic ab assumenda ullam dolorem quae, expedita et ratione sed explicabo!</p>
-			<p>XXXXXXXXXXXXXXX</p>
 
-			<div id="tools-column">
-				{% for tool in site.data.portfolio.tools %}
-
-				<div class="tools-unit"> {% include icons/tools/icon-{{ tool.name }}.html %} </div>
-
-				{% endfor %}
+			<div class="about_skills-div-1">
+				<h4 class="about_skills-header">Languages & Frameworks</h4>		
+				<ul>
+					<li>HTML5/CSS3</li>
+					<li>JavaScript</li>
+					<li>JQuery</li>
+					<li>Sass</li>
+					<li>WordPress</li>
+					<li>Twitter Bootstrap</li>
+					<li>Bourbon/Neat</li>
+				</ul>
 			</div>
+			<div class="about_skills-div-2">
+				<h4 class="about_skills-header">Toolkit & Build System</h4>
+				<ul>
+					<li>SublimeText 3</li>
+					<li>Github</li>
+					<li>Gulp.js</li>
+					<li>Node.js</li>
+					<li>Jekyll</li>
+					<li>Photoshop</li>
+					<li>Illustrator</li>
+					<li>InDesign</li>
+				</ul>
+			</div>
+			<div class="about_skills-div-3">
+				<h4 class="about_skills-header">Other Skills</h4>
+				<ul>
+					<li>SEO/SEM</li>
+					<li>Responsive Design</li>
+					<li>Accessibility</li>
+				</ul>
+			</div>
+
 		</div>
 
 
 
-		
+
 	</div>
 
 </section>

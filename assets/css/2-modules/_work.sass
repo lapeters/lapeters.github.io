@@ -33,9 +33,11 @@
 		  		repeat: no-repeat
 		  		size: cover
 		  	.thumb-overlay
+		  		padding: 5px
 		  		strong
-		  			font-size: 13px
+		  			font-size: 15px
 		  			text-transform: none
+
 				background:
 		  			position: center center
 		  			repeat: no-repeat
@@ -103,38 +105,46 @@
 			font-size: em(16, 13)
 
 		.pic
-
 			+span-columns(4)
-			+media($mobile)
-				+span-columns(12 of 12)
-			
+
 			img
 				max-width: 100%
 				height: auto
+				display: inline-block
 
 		.copy
 			+span-columns(8)
 
-			+media($mobile)
-				+span-columns(12 of 12)
 	.bttn
 		+span-columns(2)
 		+shift(1)
 		+button
+		text-transform: uppercase
 		text-align: center
-		color: #fff
 		background-color: $accent-color
 		+media($mobile)
 			+span-columns(6 of 12)
 			+shift(3)
 		a
 			color: white
+			font:
+				size: 1em
+				weight: 700
+		&:hover
+			border-color: $accent-light
 
-@media (max-width: 850px)
++media($mobile)
 	#content-main
-		i
-			+position(absolute, -2% null null 0)
-		h4
-			padding-left: 5%
+		.row
+			i
+				+position(absolute, -1.5% null null 6%)
+			h4
+				margin-left: 15%
+			.pic
+				+span-columns(6 of 12)
+				+shift(3)
+			.copy
+				+span-columns(12 of 12)
+
 
 

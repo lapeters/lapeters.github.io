@@ -3,24 +3,42 @@
 
 name: Lindsay Peters
 e-mail: lpeters322@gmail.com
-description: "Front-end web developer, web designer, and writer based in Orange County, CA and specializing in Jekyll, Wordpress and Angular."
+description: "Front-end web developer, web designer, and writer based in Orange County, CA specializing in responsive single page apps and WordPress sites."
 
 #------------------------
 # About Section
 
-tools:
-- {name: css}
-- {name: html}
-- {name: javascript}
-- {name: jquery}
-- {name: sass}
-- {name: bootstrap}
-- {name: wordpress}
-- {name: indesign}
-- {name: photoshop}
-- {name: illustrator}
-- {name: gulp}
-
+# tools:
+# - {name: css,
+# 	level: 'working'}
+# - {name: html,
+# 	level: 'working'}
+# - {name: javascript,
+# 	level: 'working'}
+# - {name: jquery,
+# 	level: 'working'}
+# - {name: sass,
+# 	level: 'working'}
+# - {name: wordpress,
+# 	level: 'working'}
+# - {name: bootstrap,
+# 	level: 'working'}
+# - {name: bourbonneat,
+# 	level: 'working'}
+# - {name: indesign,
+# 	level: 'working'}
+# - {name: photoshop,
+# 	level: 'working'}
+# - {name: illustrator,
+# 	level: 'working'}
+# - {name: jekyll,
+# 	level: 'basic'}
+# - {name: gulp,
+# 	level: 'basic'}
+# - {name: angular,
+# 	level: 'basic'}
+# - {name: d3js,
+# 	level: 'basic'}
 
 #------------------------
 # Work Section
@@ -28,16 +46,20 @@ tools:
 projects:
 - {name: For the win,
 	folder: 'proj1',
-	link: 'http://athletics.d49erspecial.com/'}
+	link: 'http://athletics.d49erspecial.com/',
+	tags: ['html','css','wordpress', 'bootstrap']}
 - {name: Intra city,
 	folder: 'proj2',
-	link: 'http://neighborhoods.d49erspecial.com/'}
+	link: 'http://neighborhoods.d49erspecial.com/',
+	tags: ['html','css','wordpress','bootstrap']}
 - {name: Localmotif,
 	folder: 'proj3',
-	link: 'http://music.d49erspecial.com/'}
+	link: 'http://music.d49erspecial.com/',
+	tags: ['html','css','wordpress','bootstrap']}
 - {name: D49er Specials,
 	folder: 'proj4',
-	link: 'http://d49erspecial.com/'}
+	link: 'http://d49erspecial.com/',
+	tags: ['html','css','wordpress','bootstrap']}
 
 stories:
 - {headline: Cal State Long Beach receives a $3.045 million grant to continue stem cell research internship,
@@ -61,11 +83,15 @@ stories:
 # Contact Section
 
 socials:
-- {icon: 'github',
+- {icon: 'github-square',
 	link: 'https://github.com/lapeters'}
-- {icon: 'linkedin',
+- {icon: 'linkedin-square',
 	link: 'https://www.linkedin.com/in/lindsay-peters-119b9381'}
-- {icon: 'twitter',
+- {icon: 'angellist',
+	link: 'https://angel.co/lindsay-peters'}
+- {icon: 'twitter-square',
 	link: 'https://www.facebook.com/lindsay.peters.18'}
-- {icon: 'facebook',
+- {icon: 'instagram',
+	link: 'https://www.instagram.com/lapeters322/'}
+- {icon: 'facebook-square',
 	link: 'https://twitter.com/lindsaypeters'}

@@ -5,17 +5,17 @@ footer
 	.footer-wrap
 		margin-left: 5%
 		transform: translateY(35%);
-		@include media($mobile)
-			transform: translateY(50%)
+
 	nav
 		a
 			color: #fff
 			@extend %small-bold
-			display: inline-block
+			display: block
 			margin-right: 20px
 
 			&:hover
 				color: $accent-color
+
 
 	.copyright
 		font:
@@ -25,3 +25,11 @@ footer
 		text-transform: uppercase
 		color: #fff
 		margin: 0
+
++media($mobile)
+	footer
+		height: 5em
+
+		nav
+			a
+				display: inline-block
