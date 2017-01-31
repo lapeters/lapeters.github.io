@@ -1,8 +1,8 @@
-#contact-main
+#contact_main-div
 	+outer-container(70em)
 	+padding(null 15px 15px 15px)
 
-.form-section
+.contact_form-div
 	+span-columns(8)
 	form
 		margin: 0 auto 50px
@@ -19,7 +19,7 @@
 		textarea
 			height: 15em
 
-		.submit-wrap
+		.contact_submit-wrap
 			text-align: left
 
 		[type="submit"]
@@ -43,7 +43,7 @@
 			display: block
 			@extend %small-bold
 
-	.client-info-wrap
+	.contact_client-wrap
 		label
 			width: 50%
 			float: left
@@ -55,12 +55,12 @@
 			&:nth-child(2)
 				padding-left: 10px
 
-.social-section
+.contact_info-div
 	+span-columns(4)
 	background: #fdeced
 	color: $text-color
 
-	.social-wrap
+	.contact_info-wrap
 		margin: 10%
 		h4
 			color: $accent-color
@@ -71,7 +71,7 @@
 			cursor: pointer
 
 +media($mobile)
-	.form-section
+	.contact_form-div
 		+span-columns(12 of 12)
-	.social-section
+	.contact_info-div
 		+span-columns(12 of 12)

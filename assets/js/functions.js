@@ -52,11 +52,11 @@ function workLoad() {
 } 
 
 function animate() {
-	$('.fa').mouseenter(function(){
+	$('.social').mouseenter(function(){
 		var $this = $(this);
 		$($this).addClass('fa-3x').removeClass('fa-2x');
 	});
-	$('.fa').mouseleave(function(){
+	$('.social').mouseleave(function(){
 		var $this = $(this);
 		$($this).removeClass('fa-3x').addClass('fa-2x');
 	});

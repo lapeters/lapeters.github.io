@@ -8,73 +8,48 @@ description: "Front-end web developer, web designer, and writer based in Orange 
 #------------------------
 # About Section
 
-# tools:
-# - {name: css,
-# 	level: 'working'}
-# - {name: html,
-# 	level: 'working'}
-# - {name: javascript,
-# 	level: 'working'}
-# - {name: jquery,
-# 	level: 'working'}
-# - {name: sass,
-# 	level: 'working'}
-# - {name: wordpress,
-# 	level: 'working'}
-# - {name: bootstrap,
-# 	level: 'working'}
-# - {name: bourbonneat,
-# 	level: 'working'}
-# - {name: indesign,
-# 	level: 'working'}
-# - {name: photoshop,
-# 	level: 'working'}
-# - {name: illustrator,
-# 	level: 'working'}
-# - {name: jekyll,
-# 	level: 'basic'}
-# - {name: gulp,
-# 	level: 'basic'}
-# - {name: angular,
-# 	level: 'basic'}
-# - {name: d3js,
-# 	level: 'basic'}
 
 #------------------------
 # Work Section
 
 projects:
-- {name: For the win,
+- {type: 'site',
+	name: For the win,
 	folder: 'proj1',
 	link: 'http://athletics.d49erspecial.com/',
 	tags: ['html','css','wordpress', 'bootstrap']}
-- {name: Intra city,
+- {type: 'site',
+	name: Intra city,
 	folder: 'proj2',
 	link: 'http://neighborhoods.d49erspecial.com/',
 	tags: ['html','css','wordpress','bootstrap']}
-- {name: Localmotif,
+- {type: 'site',
+	name: Localmotif,
 	folder: 'proj3',
 	link: 'http://music.d49erspecial.com/',
 	tags: ['html','css','wordpress','bootstrap']}
-- {name: D49er Specials,
+- {type: 'site',
+	name: D49er Specials,
 	folder: 'proj4',
 	link: 'http://d49erspecial.com/',
 	tags: ['html','css','wordpress','bootstrap']}
-
-stories:
-- {headline: Cal State Long Beach receives a $3.045 million grant to continue stem cell research internship,
+- {type: 'story',
+	headline: Cal State Long Beach receives a $3.045 million grant to continue stem cell research internship,
 	date: 'April 13, 2016',
 	link: 'http://www.daily49er.com/news/2016/04/13/cal-state-long-beach-receives-a-3-045-million-grant-to-continue-stem-cell-research-internship/',
 	folder: 'story1'}
-- {headline: BeachHacks brings programmers to CSULB for 24 hours of creation,
+- {type: 'story',
+	headline: BeachHacks brings programmers to CSULB for 24 hours of creation,
 	date: 'April 4, 2016',
 	link: 'http://www.daily49er.com/news/2016/04/04/beachhacks-brings-programmers-to-csulb-for-24-hours-of-creation/',
 	folder: 'story2'}
-- {headline: Pacific Southwest Conference holds competitions for civil engineering students,
+- {type: 'story',
+	headline: Pacific Southwest Conference holds competitions for civil engineering students,
 	date: 'April 3, 2016',
 	link: 'http://www.daily49er.com/news/2016/04/03/pacific-southwest-conference-holds-competitions-for-civil-engineering-students/',
 	folder: 'story3'}
-- {headline: Students research use of robots for human health,
+- {type: 'story',
+	headline: Students research use of robots for human health,
 	date: 'February 15, 2016',
 	link: 'http://www.daily49er.com/news/2016/02/15/students-research-use-of-robots-for-human-health/',
 	folder: 'story4'}

@@ -25,7 +25,7 @@
 		+span-columns(3 of 9)
 
 	.about_skills-header
-		text-align: left
+		text-align: center
 		margin-bottom: 0
 	li
 		list-style-type: none
@@ -35,6 +35,15 @@
 			line-height: 24px
 			vertical-align: text-bottom
 			padding-right: 10px
+	.about_skills-div-1
+		li:before
+			color: $accent-color
+	.about_skills-div-2
+		li:before
+			color: $accent-green
+	.about_skills-div-3
+		li:before
+			color: $accent-blue
 
 #about_column-side, #about_column-main
 	@media screen and (max-width: 736px)

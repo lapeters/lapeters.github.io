@@ -1,13 +1,13 @@
 <section id="contact">
-	<div id="contact-main">
+	<div id="contact_main-div">
 		<h3>Contact</h3>
 		
-		<div class="form-section">
+		<div class="contact_form-div">
 			<h4>Send Me a Message:</h4>
 			<form action="https://formspree.io/{{ site.data.portfolio.e-mail }}"
 	      method="POST">
 				
-				<div class="client-info-wrap">
+				<div class="contact_client-wrap">
 					<label for="name"><span>Your Name</span>
 		    		<input type="text" name="name"></label>
 
@@ -18,13 +18,13 @@
 	    		<label for="message"><span>Your Message</span>
 	    		<textarea name="message" id=""></textarea></label>
 
-				<div class="submit-wrap">
+				<div class="contact_submit-wrap">
 	    			<input type="submit" value="Send">
 	    		</div>
 			</form>
 		</div>
-		<div class="social-section">
-			<div class="social-wrap">
+		<div class="contact_info-div">
+			<div class="contact_info-wrap">
 				<h4>Email</h4>
 				<span>lpeters322@gmail.com</span>
 
@@ -33,7 +33,7 @@
 
 				<h4>Social Media</h4>
 					{% for social in site.data.portfolio.socials %}
-						<a href="{{ social.link }}"><i class="fa fa-{{ social.icon }} fa-2x" aria-hidden="true" target="_blank"></i></a>
+						<a href="{{ social.link }}"><i class="fa social fa-{{ social.icon }} fa-2x" aria-hidden="true" target="_blank"></i></a>
 					{% endfor %}
 			</div>
 		</div>

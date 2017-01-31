@@ -3,28 +3,28 @@
 	<div id="work-main">
 		<div class="thumb-wrap">
 			<div id="thumb-main">
-			<h3>Work</h3>	
-			<ul>
-				<!-- WEBSITES -->
-				{% for project in site.data.portfolio.projects %}
-					<li class="block" data-folder="{{  project.folder }}" data-link="{{ project.link }}"style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
-					<div class="thumb-overlay sites">
-						<strong>{{ project.name }}</strong>
-						<br><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i>
-					</div>
-					</li>
-				{% endfor %}
-				<!-- STORIES -->
-
-				{% for story in site.data.portfolio.stories %}
-				<li class="block" style="background-image: url(/assets/img/work/stories/{{ story.folder }}/main.jpg);">
-					<div class="thumb-overlay">
-						<strong>{{ story.headline }}</strong>
-						<br><a href="{{ story.link }}" target="_blank"><i class="fa fa-external-link fa-3x" aria-hidden="true"></i></a>
-					</div>
-				</li>
-				{% endfor %}
-			</ul>
+				<h3>Work</h3>	
+				<ul>
+					<!-- WEBSITES -->
+					{% for project in site.data.portfolio.projects %}
+						{% if project.type == 'site' %}
+						<li class="block" data-folder="{{  project.folder }}" data-link="{{ project.link }}"style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
+							<div class="thumb-overlay sites">
+								<strong>{{ project.name }}</strong>
+								<br><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i>
+							</div>
+						</li>
+						{% elsif project.type == 'story' %}
+						<!-- STORIES -->
+						<li class="block" style="background-image: url(/assets/img/work/stories/{{ project.folder }}/main.jpg);">
+							<div class="thumb-overlay">
+								<strong>{{ project.headline }}</strong>
+								<br><a href="{{ project.link }}" target="_blank"><i class="fa fa-external-link fa-3x" aria-hidden="true"></i></a>
+							</div>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
 

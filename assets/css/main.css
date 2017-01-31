@@ -442,7 +442,7 @@ html {
   src: local("Roboto"), local("Roboto-Regular"), url(https://fonts.gstatic.com/s/roboto/v15/oMMgfZMQthOryQo9n22dcuvvDin1pK8aKteLpeZ5c0A.woff2) format("woff2");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215; }
 
-header nav li a, footer nav a, .form-section label span {
+header nav li a, footer nav a, .contact_form-div label span {
   font-family: Montserrat, sans-serif;
   font-weight: 700;
   text-transform: uppercase; }
@@ -677,7 +677,7 @@ footer {
     #about_column-main .about_skills-div-1:last-child, #about_column-main .about_skills-div-2:last-child, #about_column-main .about_skills-div-3:last-child {
       margin-right: 0; }
   #about_column-main .about_skills-header {
-    text-align: left;
+    text-align: center;
     margin-bottom: 0; }
   #about_column-main li {
     list-style-type: none; }
@@ -687,6 +687,12 @@ footer {
       line-height: 24px;
       vertical-align: text-bottom;
       padding-right: 10px; }
+  #about_column-main .about_skills-div-1 li:before {
+    color: #F3484D; }
+  #about_column-main .about_skills-div-2 li:before {
+    color: #1A667A; }
+  #about_column-main .about_skills-div-3 li:before {
+    color: #3F4C5B; }
 
 @media screen and (max-width: 736px) {
   #about_column-side, #about_column-main {
@@ -913,40 +919,40 @@ footer {
     #content-main .row .copy:last-child {
       margin-right: 0; } }
 
-#contact-main {
+#contact_main-div {
   max-width: 70em;
   margin-left: auto;
   margin-right: auto;
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 15px; }
-  #contact-main::after {
+  #contact_main-div::after {
     clear: both;
     content: "";
     display: block; }
 
-.form-section {
+.contact_form-div {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 65.88078%; }
-  .form-section:last-child {
+  .contact_form-div:last-child {
     margin-right: 0; }
-  .form-section form {
+  .contact_form-div form {
     margin: 0 auto 50px; }
-    .form-section form input, .form-section form textarea {
+    .contact_form-div form input, .contact_form-div form textarea {
       border: 3px solid #F3484D;
       width: 100%;
       box-sizing: border-box;
       padding: 10px; }
-      .form-section form input:focus, .form-section form textarea:focus {
+      .contact_form-div form input:focus, .contact_form-div form textarea:focus {
         outline: none;
         border-color: #F89093; }
-    .form-section form textarea {
+    .contact_form-div form textarea {
       height: 15em; }
-    .form-section form .submit-wrap {
+    .contact_form-div form .contact_submit-wrap {
       text-align: left; }
-    .form-section form [type="submit"] {
+    .contact_form-div form [type="submit"] {
       background: #F3484D;
       color: white;
       font-size: 1.5em;
@@ -954,55 +960,55 @@ footer {
       text-transform: uppercase;
       width: 33%;
       cursor: pointer; }
-      .form-section form [type="submit"]:hover {
+      .contact_form-div form [type="submit"]:hover {
         border-color: #F89093; }
-  .form-section label {
+  .contact_form-div label {
     display: block; }
-    .form-section label span {
+    .contact_form-div label span {
       display: block; }
-  .form-section .client-info-wrap label {
+  .contact_form-div .contact_client-wrap label {
     width: 50%;
     float: left;
     box-sizing: border-box;
     padding-bottom: 20px; }
-    .form-section .client-info-wrap label:nth-child(1) {
+    .contact_form-div .contact_client-wrap label:nth-child(1) {
       padding-right: 10px; }
-    .form-section .client-info-wrap label:nth-child(2) {
+    .contact_form-div .contact_client-wrap label:nth-child(2) {
       padding-left: 10px; }
 
-.social-section {
+.contact_info-div {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 31.76157%;
   background: #fdeced;
   color: #222222; }
-  .social-section:last-child {
+  .contact_info-div:last-child {
     margin-right: 0; }
-  .social-section .social-wrap {
+  .contact_info-div .contact_info-wrap {
     margin: 10%; }
-    .social-section .social-wrap h4 {
+    .contact_info-div .contact_info-wrap h4 {
       color: #F3484D;
       margin-bottom: 1%; }
-    .social-section .social-wrap i {
+    .contact_info-div .contact_info-wrap i {
       color: #222222;
       padding-right: 5px;
       cursor: pointer; }
 
 @media screen and (min-width: 320px) and (max-width: 500px) {
-  .form-section {
+  .contact_form-div {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    .form-section:last-child {
+    .contact_form-div:last-child {
       margin-right: 0; }
-  .social-section {
+  .contact_info-div {
     float: left;
     display: block;
     margin-right: 2.35765%;
     width: 100%; }
-    .social-section:last-child {
+    .contact_info-div:last-child {
       margin-right: 0; } }
 
 html {
