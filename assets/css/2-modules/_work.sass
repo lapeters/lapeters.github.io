@@ -1,17 +1,17 @@
 #work
 	overflow-x: hidden
-#work-main
+#work_main-div
 	width: 200%
 	position: relative
 	left: 0%
 	+transition(all, 1000ms)
 
-.thumb-wrap, .content-wrap
+.work_thumb-wrap, .work_content-wrap
 	width: 50%
 	float: left
 
 
-#thumb-main
+#work_thumb-main
 	+outer-container(70em)
 	+padding(null 15px 15px 15px)
 
@@ -32,8 +32,8 @@
 		  		position: center center
 		  		repeat: no-repeat
 		  		size: cover
-		  	.thumb-overlay
-		  		padding: 5px
+		  	.work_thumb-overlay
+		  		padding: 1%
 		  		strong
 		  			font-size: 15px
 		  			text-transform: none
@@ -46,7 +46,7 @@
 		  	+span-columns(3)
 		  	+omega(2n)
 
-	  	.thumb-overlay
+	  	.work_thumb-overlay
 		  	+position(absolute, -50% 0px null 0px)
 		  	height: 100%
 		  	background: fade-out($accent-color, 0.1)
@@ -59,10 +59,10 @@
 
 		  	strong
 		  		display: block
-		  		+padding(20px null null null)
+		  		+padding(10% null null null)
 		  		color: white
 		  		text-transform: uppercase
-		  		font-size: 20px
+		  		font-size: 1.5em
 		  		line-height: 1
 
 		  	.zoom-icon
@@ -72,50 +72,55 @@
 
 		  	p
 		  		color: white
-		  		font-size: 12px
+		  		font-size: 1em
+		  		text-transform: uppercase
+		  		font-weight: bold
+		  		text-indent: 0
+		  		padding: 0
+		  		+margin(5% null 0 null)
 		  	i
 		  		color: #fff
 
 
 			
-		  &:hover .thumb-overlay
+		  &:hover .work_thumb-overlay
 		  	top: 0%
 		  	+transform(rotateX(0deg))
 		  	opacity: 1
 
-#content-main
+#work_content-main
 	+outer-container(70em)
 	position: relative
 	+padding(null 15px 15px 15px)
 	display: none
 
-	.row
-		+row()
+	i
+		cursor: pointer
+		opacity: 0.5
+		color: $accent-blue
+		+position(absolute, -3% null null -3%)
 
-		i
-			cursor: pointer
-			opacity: 0.5
-			color: $accent-blue
-			+position(absolute, -3% null null -3%)
+		&:hover
+			opacity: 1	
 
-			&:hover
-				opacity: 1	
+	.work_content-title
+		font-size: em(16, 13)
 
-		h4
-			font-size: em(16, 13)
+	.work_content-pic
+		+span-columns(4)
 
-		.pic
-			+span-columns(4)
+		img
+			max-width: 100%
+			height: auto
+			display: inline-block
 
-			img
-				max-width: 100%
-				height: auto
-				display: inline-block
+	.work_content-copy
+		+span-columns(8)
 
-		.copy
-			+span-columns(8)
+		p:last-of-type
+			margin-bottom: 0
 
-	.bttn
+	.work_content-button
 		+span-columns(2)
 		+shift(1)
 		+button
@@ -128,22 +133,23 @@
 		a
 			color: white
 			font:
-				size: 1em
+				size: 1.15em
 				weight: 700
 		&:hover
 			border-color: $accent-light
 
 +media($mobile)
-	#content-main
+	#work_content-main
 		.row
 			i
 				+position(absolute, -1.5% null null 6%)
 			h4
 				margin-left: 15%
-			.pic
-				+span-columns(6 of 12)
-				+shift(3)
-			.copy
+			.work_content-pic
+				+span-columns(12 of 12)
+				width: 100%
+
+			.work_content-copy
 				+span-columns(12 of 12)
 
 

@@ -19,8 +19,8 @@
 		textarea
 			height: 15em
 
-		.contact_submit-wrap
-			text-align: left
+	.contact_submit-wrap
+		text-align: left
 
 		[type="submit"]
 			background: $accent-color
@@ -57,21 +57,26 @@
 
 .contact_info-div
 	+span-columns(4)
+	+pad(4%)
 	background: #fdeced
 	color: $text-color
 
-	.contact_info-wrap
-		margin: 10%
-		h4
-			color: $accent-color
-			margin-bottom: 1%
-		i
-			color: $text-color
-			padding-right: 5px
-			cursor: pointer
+	h4:first-of-type
+		margin-top: 0
+
+	h4
+		color: $accent-color
+		margin-bottom: 1%
+	i
+		color: $text-color
+		padding-right: 5px
+		cursor: pointer
+		&:hover
+			+transform(scale(1.4))
 
 +media($mobile)
 	.contact_form-div
 		+span-columns(12 of 12)
 	.contact_info-div
 		+span-columns(12 of 12)
+

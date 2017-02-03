@@ -1,25 +1,25 @@
 <section id="work">
 
-	<div id="work-main">
-		<div class="thumb-wrap">
-			<div id="thumb-main">
+	<div id="work_main-div">
+		<div class="work_thumb-wrap">
+			<div id="work_thumb-main">
 				<h3>Work</h3>	
 				<ul>
-					<!-- WEBSITES -->
 					{% for project in site.data.portfolio.projects %}
 						{% if project.type == 'site' %}
 						<li class="block" data-folder="{{  project.folder }}" data-link="{{ project.link }}"style="background-image: url(/assets/img/work/sites/{{ project.folder }}/sml.jpeg)">
-							<div class="thumb-overlay sites">
+							<div class="work_thumb-overlay sites">
 								<strong>{{ project.name }}</strong>
-								<br><i class="fa fa-angle-double-right fa-4x" aria-hidden="true"></i>
+								<p>{{project.tags | join: ', '}}</p>
+								<i class="fa fa-angle-double-right fa-3x" aria-hidden="true"></i>
 							</div>
 						</li>
 						{% elsif project.type == 'story' %}
-						<!-- STORIES -->
 						<li class="block" style="background-image: url(/assets/img/work/stories/{{ project.folder }}/main.jpg);">
-							<div class="thumb-overlay">
+							<div class="work_thumb-overlay">
 								<strong>{{ project.headline }}</strong>
-								<br><a href="{{ project.link }}" target="_blank"><i class="fa fa-external-link fa-3x" aria-hidden="true"></i></a>
+								<p>{{ project.date }}</p>
+								<a href="{{ project.link }}" target="_blank"><i class="fa fa-external-link fa-2x" aria-hidden="true"></i></a>
 							</div>
 						</li>
 						{% endif %}
@@ -28,17 +28,17 @@
 			</div>
 		</div>
 
-		<div class="content-wrap">
-			<div id="content-main">
+		<div class="work_content-wrap">
+			<div id="work_content-main">
 				<div class="row">
 
 					<i class="fa fa-angle-double-left fa-3x work-return" title="Back"></i>
-					<h4 class="title">Work Example</h4>
+					<h4 class="work_content-title">Work Example</h4>
 			
-					<div class="pic"></div>
-					<div class="copy"></div>
+					<div class="work_content-pic"></div>
+					<div class="work_content-copy"></div>
 				</div>
-				<div class="bttn">
+				<div class="work_content-button">
 					<a href="" target="_blank" class="button">VIST SITE</a>
 				</div>
 			

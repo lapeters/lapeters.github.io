@@ -8,7 +8,6 @@ description: "Front-end web developer, web designer, and writer based in Orange 
 #------------------------
 # About Section
 
-
 #------------------------
 # Work Section
 
@@ -17,22 +16,22 @@ projects:
 	name: For the win,
 	folder: 'proj1',
 	link: 'http://athletics.d49erspecial.com/',
-	tags: ['html','css','wordpress', 'bootstrap']}
+	tags: ['HTML5','CSS3','WordPress','Bootstrap']}
 - {type: 'site',
 	name: Intra city,
 	folder: 'proj2',
 	link: 'http://neighborhoods.d49erspecial.com/',
-	tags: ['html','css','wordpress','bootstrap']}
+	tags: ['HTML5','CSS3','WordPress','Bootstrap']}
 - {type: 'site',
 	name: Localmotif,
 	folder: 'proj3',
 	link: 'http://music.d49erspecial.com/',
-	tags: ['html','css','wordpress','bootstrap']}
+	tags: ['HTML5','CSS3','WordPress','Bootstrap']}
 - {type: 'site',
 	name: D49er Specials,
 	folder: 'proj4',
 	link: 'http://d49erspecial.com/',
-	tags: ['html','css','wordpress','bootstrap']}
+	tags: ['HTML5','CSS3','WordPress','Bootstrap']}
 - {type: 'story',
 	headline: Cal State Long Beach receives a $3.045 million grant to continue stem cell research internship,
 	date: 'April 13, 2016',

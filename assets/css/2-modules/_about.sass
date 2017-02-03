@@ -1,8 +1,7 @@
 #about_main-div
 	+outer-container(70em)
-	+padding(null 15px 30px 15px)
+	+padding(null 1.154rem 2.308rem 1.154rem)
 	+row()
-
 
 #about_column-side
 	+span-columns(3)
@@ -15,26 +14,43 @@
 		display: inline-block
 		max-width: 100%
 		height: auto
-
 	
 #about_column-main
 	+span-columns(9)
 	@include omega()
 	+row()
+
+	a
+		cursor: pointer
+		&:hover
+			font-weight: 700
+
 	.about_skills-div-1, .about_skills-div-2, .about_skills-div-3
 		+span-columns(3 of 9)
+		+media($mobile)
+			+span-columns(12 of 12)
+			ul
+				padding: 0
+			li
+				display: inline-block
 
 	.about_skills-header
 		text-align: center
 		margin-bottom: 0
 	li
 		list-style-type: none
+		padding-bottom: 0.3846rem
+
+
 		&:before
 			content: '\2027'
-			font-size: 100px
+			font-size: 8.462em
 			line-height: 24px
-			vertical-align: text-bottom
-			padding-right: 10px
+			vertical-align: bottom
+			padding-right: 0.3846rem
+			+media($mobile)
+				padding-left: 0.3846rem
+
 	.about_skills-div-1
 		li:before
 			color: $accent-color
