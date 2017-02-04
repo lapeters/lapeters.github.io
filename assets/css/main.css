@@ -675,6 +675,9 @@ footer {
     display: inline-block;
     max-width: 100%;
     height: auto; }
+  #about_column-side h4 {
+    text-align: center;
+    margin-top: 0.5em; }
 
 #about_column-main {
   float: left;
