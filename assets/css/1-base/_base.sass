@@ -132,4 +132,19 @@ body
 // Mobile and Media Query Variables
 
 $mobile: new-breakpoint(min-width 300px max-width 500px, 6)
+
 $mobile-landscape: new-breakpoint(min-width 300px orientation landscape max-width 700px, 6)
+
+$mobile-pad: new-breakpoint(min-width em(768) orientation portrait, 6)
+
+
++media($mobile)
+  :root
+    font-size: 13px
+
+
++media($mobile-landscape)
+  :root
+    font-size: 13px
+
+
