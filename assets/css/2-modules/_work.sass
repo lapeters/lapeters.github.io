@@ -98,21 +98,59 @@
 		cursor: pointer
 		opacity: 0.5
 		color: $accent-blue
-		+position(absolute, -3% null null -3%)
+		+position(absolute, 3% null null -3%)
 
 		&:hover
-			opacity: 1	
+			opacity: 1
+
+		+media(max-width 965px)
+			+position(absolute, null null null 0)
+
+		+media($mobile)
+			+position(absolute, 2% null null 3.5%)
+		+media($mobile-landscape)
+			+position(absolute, 3.5% null null 2%)
+	.toprow
+		+span-columns(12)	
 
 	.work_content-title
 		font-size: em(16, 13)
 
-	.work_content-pic
+	.work_content-sidebar
 		+span-columns(4)
 
-		img
-			max-width: 100%
-			height: auto
-			display: inline-block
+		+media($mobile)
+			+span-columns(6)
+			
+
+		.work_content-pic
+			+span-columns(4 of 4)
+			
+			img
+				max-width: 100%
+				height: auto
+				display: inline-block
+
+				+media($mobile)
+					width: 100%
+			
+		.work_content-button
+			+span-columns(2 of 4)
+			+shift(1)
+			+button
+			text-transform: uppercase
+			text-align: center
+			background-color: $accent-color
+			color: white
+			font:
+				size: 1.15em
+				weight: 700
+			&:hover
+				border-color: $accent-light
+
+			+media($mobile)
+				+margin(0.5em null 0.5em null)
+
 
 	.work_content-copy
 		+span-columns(8)
@@ -120,37 +158,36 @@
 		p:last-of-type
 			margin-bottom: 0
 
-	.work_content-button
-		+span-columns(2)
-		+shift(1)
-		+button
-		text-transform: uppercase
-		text-align: center
-		background-color: $accent-color
 		+media($mobile)
-			+span-columns(6 of 12)
-			+shift(3)
-		a
-			color: white
-			font:
-				size: 1.15em
-				weight: 700
-		&:hover
-			border-color: $accent-light
+			+span-columns(6)
 
 +media($mobile)
-	#work_content-main
-		.row
-			i
-				+position(absolute, -1.5% null null 6%)
-			h4
-				margin-left: 15%
-			.work_content-pic
-				+span-columns(12 of 12)
-				width: 100%
+	 #work_content-main
+		.toprow
+			+span-columns(12)
 
-			.work_content-copy
-				+span-columns(12 of 12)
+			h4
+				margin-left: 10%
+			.work_content-sidebar
+				.work_content-button
+					font-size: 70%
++media($mobile-landscape)
+	#work_content-main
+		.toprow
+			h4
+				margin-left: 5%
+			.work_content-sidebar
+				.work_content-button
+					font-size: 90%
++media(max-width 965px)
+	#work_content-main
+		.toprow
+			h4
+				margin-left: 1.5em
+			.work_content-sidebar
+				.work_content-button
+					font-size: 95%
+
 
 
 
