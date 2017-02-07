@@ -563,14 +563,6 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #C4F0F8; }
 
-@media screen and (min-width: 300px) and (max-width: 500px) {
-  :root {
-    font-size: 13px; } }
-
-@media screen and (min-width: 300px) and (orientation: landscape) and (max-width: 700px) {
-  :root {
-    font-size: 13px; } }
-
 header {
   height: 500px;
   background: url(../img/bkgrnd2.png) top left repeat-x; }
@@ -886,20 +878,6 @@ footer {
     padding-left: 0.25em; }
     #work_content-main i:hover {
       opacity: 1; }
-    @media screen and (min-width: 300px) and (max-width: 500px) {
-      #work_content-main i {
-        position: absolute;
-        top: 2%;
-        left: 3.5%; } }
-    @media screen and (min-width: 300px) and (orientation: landscape) and (max-width: 700px) {
-      #work_content-main i {
-        position: absolute;
-        top: 3.5%;
-        left: 2%; } }
-    @media screen and (min-width: 48em) and (orientation: portrait) {
-      #work_content-main i {
-        position: absolute;
-        left: 0; } }
   #work_content-main .toprow {
     float: left;
     display: block;
@@ -951,13 +929,13 @@ footer {
       font-weight: bold;
       padding: 7px 18px;
       text-decoration: none;
+      font-size: 1.15em;
+      font-weight: 700;
       padding: 0.438em 1.125em;
       text-transform: uppercase;
       text-align: center;
       background-color: #F3484D;
-      color: white;
-      font-size: 1.15em;
-      font-weight: 700; }
+      color: white; }
       #work_content-main .work_content-sidebar .work_content-button:last-child {
         margin-right: 0; }
       #work_content-main .work_content-sidebar .work_content-button:hover:not(:disabled) {
@@ -974,6 +952,15 @@ footer {
         #work_content-main .work_content-sidebar .work_content-button {
           margin-top: 0.5em;
           margin-bottom: 0.5em; } }
+      @media screen and (max-width: 755px) {
+        #work_content-main .work_content-sidebar .work_content-button {
+          font-size: 110%; } }
+      @media screen and (max-width: 727px) {
+        #work_content-main .work_content-sidebar .work_content-button {
+          font-size: 95%; } }
+      @media screen and (max-width: 643px) {
+        #work_content-main .work_content-sidebar .work_content-button {
+          font-size: 90%; } }
   #work_content-main .work_content-copy {
     float: left;
     display: block;
@@ -999,17 +986,18 @@ footer {
     margin-right: 4.82916%;
     width: 204.82916%; }
     .toprow:last-child {
-      margin-right: 0; }
-    .toprow h4 {
-      margin-left: 10%; } }
+      margin-right: 0; } }
 
-@media screen and (min-width: 300px) and (orientation: landscape) and (max-width: 700px) {
+@media screen and (max-width: 945px) {
+  #work_content-main .toprow i {
+    position: absolute;
+    left: 0; }
   #work_content-main .toprow h4 {
-    margin-left: 5%; } }
+    margin-left: 1.75em; } }
 
-@media screen and (max-width: 965px) {
-  #work_content-main .toprow h4 {
-    margin-left: 2.25em; } }
+@media screen and (max-width: 500px) {
+  #work_content-main .toprow i {
+    top: 0.33em; } }
 
 #contact_main-div {
   max-width: 70em;

@@ -105,12 +105,7 @@
 			opacity: 1
 
 
-		+media($mobile)
-			+position(absolute, 2% null null 3.5%)
-		+media($mobile-landscape)
-			+position(absolute, 3.5% null null 2%)
-		+media($mobile-pad)
-			+position(absolute, null null null 0)
+
 	.toprow
 		+span-columns(12)	
 
@@ -139,19 +134,26 @@
 			+span-columns(2 of 4)
 			+shift(1)
 			+button
+			font:
+				size: 1.15em
+				weight: 700
 			+padding(0.438em 1.125em 0.438em 1.125em)
 			text-transform: uppercase
 			text-align: center
 			background-color: $accent-color
 			color: white
-			font:
-				size: 1.15em
-				weight: 700
 			&:hover
 				border-color: $accent-light
-
+			
 			+media($mobile)
 				+margin(0.5em null 0.5em null)
+
+			+media(max-width 755px)
+				font-size: 110%
+			+media(max-width 727px)
+				font-size: 95%
+			+media(max-width 643px)
+				font-size: 90%
 
 
 	.work_content-copy
@@ -167,20 +169,18 @@
 	 #work_content-main
 		.toprow
 			+span-columns(12)
-
-			h4
-				margin-left: 10%
-+media($mobile-landscape)
++media(max-width 945px)
 	#work_content-main
 		.toprow
+			i
+				+position(absolute, null null null 0)
 			h4
-				margin-left: 5%
-+media(max-width 965px)
+				margin-left: 1.75em
++media(max-width 500px)
 	#work_content-main
 		.toprow
-			h4
-				margin-left: 2.25em
-
+			i
+				top: 0.33em
 
 
 
