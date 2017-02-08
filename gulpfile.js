@@ -3,6 +3,11 @@ var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
+var deploy      = require('gulp-gh-pages');
+var options     = {
+    remoteUrl: "https://github.com/lapeters/lapeters.github.io.git",
+    branch: "master"
+};
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -59,6 +64,14 @@ gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch(['assets/js/**'], ['jekyll-rebuild']);
+});
+
+/**
+ * Push build to gh-pages
+ */
+gulp.task("deploy", ["jekyll-build"], function () {
+    return gulp.src("./_site/**/*")
+        .pipe(deploy(options));
 });
 
 /**
