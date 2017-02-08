@@ -961,6 +961,9 @@ footer {
       @media screen and (max-width: 643px) {
         #work_content-main .work_content-sidebar .work_content-button {
           font-size: 90%; } }
+      @media screen and (max-width: 568px) {
+        #work_content-main .work_content-sidebar .work_content-button {
+          font-size: 83%; } }
   #work_content-main .work_content-copy {
     float: left;
     display: block;
