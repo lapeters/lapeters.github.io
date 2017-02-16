@@ -1,4 +1,4 @@
-$(function() {
+$(window).load(function() {
 	smoothScroll(1000);
 	workBelt();
 	workLoad();
