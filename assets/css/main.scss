@@ -11,18 +11,5 @@
 @import "2-modules/work";
 @import "2-modules/contact";
 
-html {
-	height: 100%;
-
-	body {
-		min-height: 100%;
-
-		flex-direction: column;
-
-		#home {
-			flex: 1;
-		}
-	}
-}
 
 
