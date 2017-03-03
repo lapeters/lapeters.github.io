@@ -6,6 +6,10 @@ html {
   box-sizing: inherit;
 }
 
+/* FONTS SECTION
+* ======================================================
+	*/
+
 @font-face {
   font-family: 'Open Sans';
   font-style: normal;
@@ -59,9 +63,9 @@ header nav li a,footer nav a,.contact_form-div label span {
   text-transform: uppercase;
 }
 
-:root {
-  font-size: 16px;
-}
+/* BASE STYLES */
+
+/* ====================================================== */
 
 html {
   height: 100%;
@@ -106,6 +110,10 @@ section:nth-child(odd) {
   flex: 1;
 }
 
+/* Typography */
+
+/* ---------------- */
+
 h1,h2,h3,h4,h5,h6 {
   color: #F3484D;
   font-family: Montserrat, sans-serif;
@@ -143,6 +151,10 @@ strong {
   font-weight: 700;
 }
 
+/* Links */
+
+/* ---------------- */
+
 a {
   color: #F3484D;
   text-decoration: none;
@@ -152,6 +164,10 @@ a {
 a:hover,a:focus {
   color: #F3484D;
 }
+
+/* Forms */
+
+/* ---------------- */
 
 button,input,textarea {
   font-family: Roboto, sans-serif;
@@ -178,6 +194,8 @@ body {
 }
 
 /* HEADER SECTION */
+
+/* ====================================================== */
 
 header {
   height: 40.3995em;
@@ -260,6 +278,8 @@ header .kicker {
 
 /* FOOTER SECTION */
 
+/* ====================================================== */
+
 footer {
   background: #222222;
   height: 5em;
@@ -302,6 +322,8 @@ footer nav a:hover {
 }
 
 /* ABOUT ME SECTION */
+
+/* ====================================================== */
 
 #about_main-div {
   max-width: 70em;
@@ -474,6 +496,8 @@ footer nav a:hover {
 }
 
 /* WORK SECTION */
+
+/* ====================================================== */
 
 #work {
   overflow-x: hidden;
@@ -846,6 +870,8 @@ footer nav a:hover {
 }
 
 /* CONTACT SECTION */
+
+/* ====================================================== */
 
 #contact_main-div {
   max-width: 70em;
