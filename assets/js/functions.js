@@ -20,12 +20,12 @@ function smoothScroll (duration) {
 
 function workBelt() {
 	$('.sites').click(function() {
-		$('#work_main-div').css('left', '-100%');
-		$('#work_content-main').show();
+		$('.work_main-div').css('left', '-100%');
+		$('.work_content-main').show();
 	});
 	$('.work-return').click(function() {
-		$('#work_main-div').css('left', '0%');
-		$('#work_content-main').hide(800);
+		$('.work_main-div').css('left', '0%');
+		$('.work_content-main').hide(800);
 	});
 
 }
