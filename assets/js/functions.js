@@ -47,4 +47,4 @@ function workLoad() {
 		$('.button').attr("href", newLink);
 		$('.work_content-title').text(newTitle);
 	});
-} 
+}
