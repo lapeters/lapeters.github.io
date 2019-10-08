@@ -1,12 +1,12 @@
 @import "0-tools/normalize";
 @import "0-tools/bourbon/bourbon";
 @import "0-tools/neat/neat";
-@import "0-tools/fonts";
 @import "1-base/vars";
 @import "1-base/placeholders";
 @import "1-base/base";
 @import "2-modules/header";
 @import "2-modules/footer";
+@import "2-modules/hero";
 @import "2-modules/about";
 @import "2-modules/work";
 @import "2-modules/contact";

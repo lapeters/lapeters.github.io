@@ -2,6 +2,7 @@ $(window).load(function() {
 	smoothScroll(1000);
 	workBelt();
 	workLoad();
+	stickyHeader();
 });
 
 function smoothScroll (duration) {
@@ -12,7 +13,7 @@ function smoothScroll (duration) {
 		if( target.length ) {
 			event.preventDefault();
 			$('html, body').animate({
-				scrollTop: target.offset().top
+				scrollTop: target.offset().top - 70
 			}, duration);
 		}
 	});
@@ -36,7 +37,7 @@ function workLoad() {
 	$('.block').click(function(){
 
 		var $this = $(this),
-			newTitle = $this.find('strong').text(),
+			newTitle = $this.find('h3.h4').text(),
 			newFolder = $this.data('folder'),
 			newLink = $this.data('link'),
 			urlPic = '/work/' + newFolder + '/img.html',
@@ -46,5 +47,17 @@ function workLoad() {
 		$('.work_content-copy').load(urlCopy);
 		$('.button').attr("href", newLink);
 		$('.work_content-title').text(newTitle);
+	});
+}
+
+function stickyHeader() {
+	var stickyTop = jQuery('header').height() + 100;
+
+	jQuery(window).scroll(function(){
+		if(jQuery(window).scrollTop() >= stickyTop){
+			jQuery('header nav').addClass('sticky');
+		}else{
+			jQuery('header nav').removeClass('sticky');
+		}
 	});
 }
